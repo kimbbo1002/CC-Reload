@@ -3,18 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bokim <bokim@student.42lyon.fr>            +#+  +:+       +#+        */
+/*   By: bokim <bokim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:24:51 by bokim             #+#    #+#             */
-/*   Updated: 2025/11/03 13:27:55 by bokim            ###   ########lyon.fr   */
+/*   Updated: 2025/11/04 13:48:17 by bokim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ft(int *nbr)
+void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
 
+/*
 #include <stdio.h>
 int main()
 {
@@ -27,3 +28,4 @@ int main()
 	ft_ft(p);
 	printf("%d\n", a);
 }
+*/

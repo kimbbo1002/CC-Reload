@@ -3,21 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bokim <bokim@student.42lyon.fr>            +#+  +:+       +#+        */
+/*   By: bokim <bokim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:28:44 by bokim             #+#    #+#             */
-/*   Updated: 2025/11/03 13:33:02 by bokim            ###   ########lyon.fr   */
+/*   Updated: 2025/11/04 13:48:30 by bokim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_swap(int *a, int *b)
+void	ft_swap(int *a, int *b)
 {
-	int tmp;
+	int	tmp;
+
 	tmp = *a;
 	*a = *b;
 	*b = tmp;
 }
 
+/*
 #include <stdio.h>
 int main()
 {
@@ -34,3 +36,4 @@ int main()
 	ft_swap(p1, p2);
 	printf("%d, %d\n", a, b);
 }
+*/

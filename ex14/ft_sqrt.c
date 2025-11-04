@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bokim <bokim@student.42lyon.fr>            +#+  +:+       +#+        */
+/*   By: bokim <bokim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:55:08 by bokim             #+#    #+#             */
-/*   Updated: 2025/11/03 13:59:59 by bokim            ###   ########lyon.fr   */
+/*   Updated: 2025/11/04 13:49:06 by bokim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_sqrt(int nb)
+int	ft_sqrt(int nb)
 {
-	int i;
+	int	i;
 
 	i = 1;
 	while (i <= nb / 2)
@@ -22,11 +22,13 @@ int ft_sqrt(int nb)
 		else
 			i++;
 	}
-	return 0;
+	return (0);
 }
 
+/*
 #include <stdio.h>
 int main()
 {
 	printf("%d", ft_sqrt(8));
 }
+*/

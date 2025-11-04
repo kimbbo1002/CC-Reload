@@ -1,36 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bokim <bokim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/03 13:33:23 by bokim             #+#    #+#             */
-/*   Updated: 2025/11/04 13:48:36 by bokim            ###   ########.fr       */
+/*   Created: 2025/11/04 14:18:04 by bokim             #+#    #+#             */
+/*   Updated: 2025/11/04 15:03:48 by bokim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+#include <stdlib.h>
+
+int	ft_strlen(char *str)
 {
-	*div = a / b;
-	*mod = a % b;
+	int	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
 
+char	*ft_strdup(char *src)
+{
+	char	*res;
+	int		len;
+	int		i;
+
+	len = ft_strlen(src);
+	res = malloc(sizeof(char) * (len + 1));
+	i = 0;
+	while (src[i])
+	{
+		res[i] = src[i];
+		i++;
+	}
+	res[i] = '\0';
+	return (res);
+}
 /*
 #include <stdio.h>
 int main()
 {
-	int a;
-	int b;
-	int* p1;
-	int* p2;
-
-	a = 8;
-	b = 2;
-	p1 = &a;
-	p2 = &b;
-	printf("%d, %d\n", a, b);
-	ft_div_mod(a, b, p1, p2);
-	printf("%d, %d\n", a, b);
+	printf("%s", ft_strdup("hello"));
 }
 */

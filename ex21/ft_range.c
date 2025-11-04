@@ -1,36 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bokim <bokim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/03 13:33:23 by bokim             #+#    #+#             */
-/*   Updated: 2025/11/04 13:48:36 by bokim            ###   ########.fr       */
+/*   Created: 2025/11/04 15:05:33 by bokim             #+#    #+#             */
+/*   Updated: 2025/11/04 15:25:06 by bokim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
-{
-	*div = a / b;
-	*mod = a % b;
-}
+#include <stdlib.h>
 
+int	*ft_range(int min, int max)
+{
+	int	*res;
+	int	i;
+
+	if (min >= max)
+		return (NULL);
+	res = malloc(sizeof(int) * (max - min));
+	i = 0;
+	while (min < max)
+		res[i++] = min++;
+	return (res);
+}
 /*
 #include <stdio.h>
 int main()
 {
-	int a;
-	int b;
-	int* p1;
-	int* p2;
-
-	a = 8;
-	b = 2;
-	p1 = &a;
-	p2 = &b;
-	printf("%d, %d\n", a, b);
-	ft_div_mod(a, b, p1, p2);
-	printf("%d, %d\n", a, b);
+	int i;
+	i = 0;
+	
+	int *res = ft_range(1, 0);
+	while (i < 1)
+	{
+		printf("%d", res[i]);
+		i++;
+	}
 }
-*/
+	*/

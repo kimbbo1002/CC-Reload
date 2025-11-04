@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bokim <bokim@student.42lyon.fr>            +#+  +:+       +#+        */
+/*   By: bokim <bokim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:41:18 by bokim             #+#    #+#             */
-/*   Updated: 2025/11/03 13:54:50 by bokim            ###   ########lyon.fr   */
+/*   Updated: 2025/11/04 13:48:54 by bokim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_recursive_factorial(int nb)
+int	ft_recursive_factorial(int nb)
 {
-	int res;
-	int i;
-	
+	int	res;
+	int	i;
+
 	res = 1;
 	if (nb > 0)
 	{
@@ -23,8 +23,10 @@ int ft_recursive_factorial(int nb)
 	return (res);
 }
 
+/*
 #include <stdio.h>
 int main()
 {
 	printf("%d", ft_recursive_factorial(4));
 }
+*/
